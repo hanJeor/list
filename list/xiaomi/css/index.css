@@ -1,0 +1,623 @@
+@charset "UTF-8";
+.liner{
+    position: relative;
+    width:1226px;
+    margin: 0 auto;
+}
+header{
+    background: #333;
+}
+header a{
+    color: #b0b0b0;
+    font:12px/40px "微软雅黑";
+    margin: 0 7px;
+}
+header a:hover{
+    color: white;
+}
+header li{
+    float: left;
+}
+.header-2 li{
+    float: left;
+}
+.mm{
+    margin-left: 0;
+}
+.cart{
+    position: relative;
+    z-index: 50;
+    text-align: center ;
+    width:120px;
+    height:40px;
+    background: #424242;
+}
+.cart a:hover{
+    color: orange;
+    background: white;
+}
+.ul{
+    margin-right: 19px;
+}
+#shopping{
+    position: absolute;
+    z-index: 20;
+    right:0;
+    top:40px;
+    width:320px;
+    height:0;
+    background: white;
+    border-top:none;
+    box-shadow:0 2px 10px rgba(0,0,0,0.15);
+}
+/*header结束*/
+
+/*header-2开始*/
+
+.logo{
+    float:left;
+    margin-top: 22px;
+}
+nav{
+    float: left;
+    margin: 41px 0 0 179px;
+}
+nav>ul a{
+    padding: 0 10px 0;
+    font:16px "微软雅黑";
+    color: #333;
+}
+nav>ul a:hover{
+    color: #ff6700;
+}
+.input{
+    padding-top:25px;
+}
+.input span{
+    float: left;
+}
+input:first-child{
+    width:243px;
+    height:48px;
+    font-size: 15px;
+    color: black;
+    text-indent: 10px;
+    border: 1px solid #e0e0e0;
+}
+input:nth-child(2){
+    width:50px;
+    height:50px;
+    border: 1px solid #e0e0e0;
+    border-left:none;
+    transition: all 0.3s;
+}
+input:nth-child(2):hover{
+    color: white;
+    border-color: #ff6700;
+    background: #ff6700;
+}
+
+/*header-2结束*/
+
+/*main区开始*/
+.main{
+    height:1000px;
+    margin-top:23px;
+}
+.list ul{
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 2;
+    width:234px;
+    height:460px;
+    background: #030405;
+    background: rgba(0,0,0,0.7);
+}
+.list {
+    height:460px;
+}
+.list li a{
+    display: block;
+    padding-left: 30px;
+    width:204px;
+    font:14px/42px "微软雅黑";
+    color: white;
+}
+.list li a:hover{
+    background: #ff6700;
+}
+.list li:first-child{
+    padding-top: 20px;
+}
+.banner{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.banner ul{
+    position: absolute;
+    bottom:25px;
+    right:35px;
+}
+.banner ul a{
+    display: inline-block;
+    width:6px;
+    height:6px;
+    margin-left: 10px;
+    background: #808384;
+    border:2px solid #a6a7a9;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+.banner ul li{
+    float: left;
+
+}
+.banner ul li a:hover{
+    background: white;
+    border-color: #808384;
+}
+.home{
+    margin-top: 14px;
+    width:234px;
+}
+.home ul{
+    text-align: center;
+    padding: 3px;
+    background: #5f5750;
+
+}
+.home li{
+    position: relative;
+    width:70px;
+    height:82px;
+    float: left;
+    padding: 0 3px;
+}
+.home li:before, .home li:after{
+    position: absolute;
+    content: "";
+    background: #665e57;
+}
+.home li:before{
+    top:-1px;
+    left:6px;
+    width:64px;
+    height:1px;
+}
+.home li:after{
+    top:6px;
+    left:0;
+    width:1px;
+    height:70px;
+}
+.home li a{
+    color: #e0dedd;
+    font:12px/82px "微软雅黑";
+    transition: all 0.2s;
+}
+.home li:hover a{
+    color: white;
+}
+.boxPng{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:978px;
+    margin: 14px 0 0 14px;
+}
+.boxPng div{
+    transition: all 0.3s;
+}
+.boxPng div:hover{
+    box-shadow: 0 20px 20px #eee;
+}
+.h2{
+    float: left;
+    margin-top: 26px;
+    font: 22px/58px "微软雅黑";
+    color: #333;
+}
+
+
+.time{
+    text-align: center;
+    width:234px;
+    height:339px;
+    background: #f1eded;
+    border-top:1px solid  #e53935;
+}
+.chang{
+    font-size:21px;
+    color: #ef3a3b;
+    margin-top: 58px;
+    margin-bottom: 32px;
+}
+.time>p{
+    padding-top: 35px;
+    font:15px "微软雅黑";
+    color: #706f6f;
+}
+#downTime{
+    width:168px;
+    margin: 28px auto 0;
+    display: flex;
+    flex-direction: row;
+}
+#downTime p{
+    width:16px;
+    height:46px;
+    font-size: 20px;
+    line-height: 50px;
+}
+#downTime .box{
+    text-align: center;
+    font:22px/48px arial;
+    color:white;
+    width:46px;
+    height:46px;
+    background: #605751;
+}
+.active{
+    width:1226px;
+    height:84px;
+}
+.flash{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 14px;
+    height:340px;
+    width:978px;
+}
+.flash li {
+    width:234px;
+    height:340px;
+}
+.flash div{
+    width:100%;
+    height:100%;
+}
+.flash .bg1{
+    background: url("../images/shangou_05.png");
+}
+.flash .bg2{
+    background: url("../images/shangou_03.png");
+}
+.flash .bg3{
+    background: url("../images/shangou_07.png");
+}
+.flash .bg4{
+    background: url("../images/shangou_09.png");
+}
+.ad-1{
+    margin: 42px 0 42px;
+}
+
+
+
+/*最大内容区开始*/
+.big-main{
+    padding-top: 60px;
+    width:100%;
+    background: #f5f5f5;
+}
+.header-title{
+    width:1226px;
+    height:58px;
+}
+.header-title h2{
+    font:22px/58px "微软雅黑";
+    color: #333;
+}
+.header-title .right{
+    width:98px;
+    height:58px;
+}
+.jiaDian .header-title .right{
+    width:250px;
+    height:58px;
+}
+.header-title a{
+    font:16px/58px "微软雅黑";
+    color: #333;
+    margin-left: 20px;
+    transition:all 0.3s;
+}
+.header-title a:hover{
+    color: #ff6700;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ff6700;
+}
+.row .left{
+    position: relative;
+    width:234px;
+    height:614px;
+}
+.row .left img{
+    position: absolute;
+    top:0;
+    left:0;
+    transition:all 0.3s;
+}
+.row .left img:hover{
+    top:-2px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.row .top{
+    width:992px;
+}
+.row .top li{
+    position: relative;
+    width:234px;
+    height:300px;
+    float:left;
+    margin: 0 0 14px 14px;
+}
+.row .top div{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width:234px;
+    height:260px;
+    padding: 20px 0 20px;
+    transition: all 0.3s;
+    background: white;
+    overflow: hidden;
+}
+.row .top li div:hover{
+    top:-4px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.row .top li img{
+    width:160px;
+    height:160px;
+    margin: 10px 0 24px;
+}
+.row .top li .one{
+    display: block;
+    font:14px/22px "微软雅黑";
+    color: #333;
+}
+.row .top li .two{
+    font:12px/22px "微软雅黑";
+    color: #b7b7c1;
+}
+.row .top li .three{
+    font:14px/38px "微软雅黑";
+    color: #ff6700;
+}
+.jiangjia{
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    width:64px;
+    font:12px/20px "微软雅黑";
+    color: white;
+    background: #e53935;
+}
+
+/*第二部分开始*/
+.jiaDian .leftTwo{
+    width:234px;
+    height:614px;
+}
+.jiaDian .leftTwo ul li{
+    width:234px;
+    height:300px;
+    position: relative;
+    float: left;
+}
+.jiaDian .leftTwo div{
+    position: absolute;
+    top:0;
+    transition: all 0.3s;
+}
+.jiaDian .leftTwo div:hover{
+    top:-4px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.jiaDian .leftTwo li:first-child{
+    margin-bottom: 14px;
+}
+.aa{
+    display: none;
+}
+.bb{
+    display: block;
+}
+
+#jia .tanC{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:234px;
+    height:0;
+    background: #ff6700;
+    transition: all 0.3s;
+}
+#jia li:hover .tanC{
+    height:62px;
+}
+#jia .tanC a{
+    color: white;
+    display: block;
+    padding: 12px;
+}
+.header-2{
+    position: relative;
+}
+.nav-one{
+    position: absolute;
+    top:100px;
+    left:0;
+    z-index: 100;
+    width:100%;
+    height:0;
+    background: white;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+.box{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.header-2 nav ul li:hover .nav-one{
+    height:230px;
+}
+.nav-one p{
+    display: inline-block;
+    color: #ff6700;
+    width:65px;
+    height:18px;
+    border: 1px solid #ff6700;
+}
+.nav-one img{
+    margin: 15px 0;
+    width:200px;
+    height:130px;
+}
+.nav-one span{
+    display: block;
+}
+
+
+/*加长图片栏*/
+.xunJpg .look{
+    position: relative;
+    overflow: hidden;
+    width:1226px;
+    height:340px;
+}
+.xunJpg ul{
+    position: absolute;
+    left:0;
+    top:3px;
+    width:4960px;
+    height:314px;
+    transition: all 0.8s;
+}
+.xunJpg .right div{
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+    font:16px/16px arial;
+    width:24px;
+    height:16px;
+    padding: 3px 5px;
+    border: 1px solid #e0e0e0;
+}
+.xunJpg img{
+    padding-bottom:15px;
+}
+.xunJpg li a{
+    font-size: 14px;
+    color: #333;
+    display: block;
+}
+.xunJpg li p{
+    font-size: 14px;
+    color: #fa6509;
+    margin-top: 10px;
+}
+.xunJpg li div p:nth-child(4){
+    color: #adadad;
+}
+
+.xunJpg .look li{
+    position: relative;
+    width:234px;
+    height:300px;
+    float:left;
+    margin: 0 14px 14px 0;
+}
+.xunJpg .look li div{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width:234px;
+    height:260px;
+    padding: 40px 0 20px;
+    transition: all 0.3s;
+    background: white;
+    overflow: hidden;
+}
+.xunJpg .look li div:hover{
+    top:-4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+.tuijian li:first-child{
+    margin: 0;
+}
+.tuijian li{
+    position: relative;
+    float:left;
+    width:296px;
+    height:419px;
+    margin: 0 0 14px 14px;
+}
+.tuijian li p{
+    width:240px;
+    height:72px;
+    margin:33px 28px 24px ;
+
+}
+.tuijian li img{
+    width:296px;
+    height:220px;
+}
+.tuijian li .txt{
+    display: inline-block;
+    font:14px/24px "微软雅黑";
+    color: #333;
+}
+.tuijian li span{
+    display: inline-block;
+    font:12px "微软雅黑";
+    color: #b0b0b0;
+    margin: 0 28px 11px;
+}
+.tuijian li .name{
+    font:14px "微软雅黑";
+    color: #333;
+    margin-left: 28px;
+}
+.tuijian li .name:after{
+    content: "|";
+    color: #e0e0e0;
+    margin: 0 8px;
+}
+.tuijian h3{
+    color: #ff6700;
+}
+.fot{
+    font:22px/58px "微软雅黑";
+    color:#333;
+}
+.tuijian div{
+    position: absolute;
+    top:0;
+    left:0;
+    width:296px;
+    height:419px;
+    background: white;
+    transition: all 0.2s;
+}
+.tuijian div:hover{
+    top:-4px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+
+/*底部开始*/
+footer{
+    width:100%;
+    height:439px;
+    background: white;
+}
