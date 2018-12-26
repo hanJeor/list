@@ -1,0 +1,131 @@
+.menu{
+    height:120px;
+    background: #f8f8f8;
+}
+.menu .menu-l{
+    float: left;
+    width:628px;
+    height:27px;
+    border-right:1px solid #eee;
+}
+.menu .menu-l ul{
+    list-style-type: none;
+}
+.menu .menu-l li{
+    /*line-height: 27px;*/
+    padding-left:6px;
+    padding-right:10px;
+    float: left;
+}
+.menu .left-one{
+    float: left;
+    padding-top:25px;
+}
+.menu-l .one{
+    background: #00c38e;
+}
+.menu .menu-l li a{
+    color:black;
+    font:12px "新宋体";
+}
+.menu-l li:hover{
+    font-weight: bold;
+    background: #00c38e;
+}
+.w1200 img{margin-right:26px;}
+
+.menu-r{
+    margin-left:28px;
+    float: left;
+    font:12px/29px "微软雅黑";
+}
+.right-top{
+    margin-top:24px;
+}
+.menu-r a{
+    display: inline-block;
+    color:white;
+    padding-left:16px;
+    padding-right:14px;
+    border-radius:1px;
+    background:#ff8400;
+    margin-right:15px;
+}
+.menu-r span{
+    color:#ff6700;
+}
+.aside{
+    float: left;
+}
+.aside h1{
+    font: bold 24px/41px "微软雅黑";
+}
+.content ul{
+    /*float: left;*/
+    width:360px;
+    list-style-type: none;
+}
+.content ul li{
+    height:49px;
+    float: left;
+    border-top:1px solid #eee;
+}
+.content ul li a{
+    font:12px/49px "微软雅黑";
+    color:black;
+    display: inline-block;
+    width:360px;
+}
+.banner{
+    position: relative;
+    width:601px;
+    height: 299px;
+    float: left;
+}
+.aside a:hover{
+    font-weight: bold;
+    color:#00c38e;
+}
+.banner span{
+    position: absolute;
+    font:14px "微软雅黑";
+    color:white;
+    left:10px;
+    bottom:30px;
+}
+.section1{
+    float: left;
+}
+.section1 ul{
+    width: 610px;
+    height: 150px;
+    list-style-type: none;
+}
+
+.section1 ul li{
+    position: relative;
+    width:170px;
+    height:150px;
+}
+.section1 .w190{
+    float: left;
+    width: 190px;
+    height: 150px;
+    margin-right:15px;
+}
+.section1 ul li span{
+    position: absolute;
+    width:190px;
+    height:80px;
+    bottom:0;
+    left:0;
+    display: none;
+    color:white;
+    font:12px/14px '微软雅黑';
+    text-align: center;
+}
+.section1 ul li:hover span{
+    display: block;
+    bottom: 0;
+    left: 0;
+}
