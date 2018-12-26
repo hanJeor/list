@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{margin:0;
+            /*font-size:12px; font-family: "宋体";*/
+
+        }
+        h1,h2,h3,h4,h5,h6{margin:0;font-weight:normal;font-size:12px;line-height:1;}
+        p{margin:0;}
+        ul,ol{margin:0;padding:0;list-style:none;}
+        dl{margin:0;}
+        dd{margin:0;}
+        strong,b{font-weight:normal;}
+        i,em{font-style:normal;}
+        a{text-decoration: none;color:#0a8cd2;}
+        img{ border:none;vertical-align:bottom;}
+        /*middle*/
+        .clearfix:after{content:"";display:block;clear:both;}
+        .clearfix{*zoom:1;}
+
+
+        body{width:1349px;height:1000px;background: url("img/bg.png");}
+        #tab_nav{margin:0;padding:0;height:38px;margin-top:18px;}
+        #tab_nav li{text-decoration: none;color:red;float:left;list-style:none;height:38px;width:160px;text-align:center;border:1px solid #d9d9d9;margin-left: 12px;}
+        #tab_nav li a{font:14px/38px "宋体";color:black;text-decoration: none;margin: 5px;}
+        #tab_nav li a:hover{color: skyblue;}
+        #tab_nav li:active{background-color: deepskyblue;}
+        #tab_nav li:hover{border-bottom:1px solid white;background: #00adef;}
+        #tab_content{float:left;width:570px;height:500px;font-family: "宋体";overflow: hidden;}
+        .tab{width:568px;height:500px;border:1px solid #eee;}
+        .msg{width:200px;height:30px;border:1px solid #cccccc;}
+        .tab{font-size:14px;font-family: "宋体";}
+        .top{height:80px;width:810px;margin:0 auto;}
+        #box{position:relative;width: 810px;height: 530px;margin:0 auto;border-top:2px solid #ff9000;background:white;}
+        .top-img{margin-top:35px;}
+        .tab span{color:red;}
+        .c-img{margin-top:40px;margin-left: 30px;float: left;}
+        .tab ul{width:455px;float: left;margin-top:48px;margin-left:31px;}
+        .DirectLogin{font-size: 12px;margin-left: 80px;line-height:38px;}
+        .turn{margin-left: 88px;}
+        .shortMsg{float: left;margin-left:81px;margin-top:16px;}
+        .shortMsg input{width:158px;height:28px;font-size:12px;margin:0;padding:0;}
+        .protocol{float: left;margin-top:31px;margin-left:192px;}
+        .code{float:left;margin-left:123px;margin-top:31px;width:440px;}
+        .register{float:left;display:block;margin-left:190px;margin-top:36px;width:192px;height:42px;
+            background-color: #8cd232;border:0px;font-size:14px;color:white;}
+        .pto{margin-top:16px;}
+        .protocol a{font-size:12px;}
+        .side{position: absolute;right:-54px;}
+        .right{width:240px;height:100px;border-top:1px solid #eee;float:left;font-size:14px;}
+        .right p{margin-left:25px;margin-top:40px;}
+        .bottom{position:absolute;height:97px;width:810px;border-top:1px solid #eee;bottom:0;}
+        .bottom ul{list-style-type: none;}
+        .bottom ul li{float: left;margin-right:10px;}
+        .bottom ul li a{font-size:12px;font-family: "宋体", Verdana, Arial, Helvetica, sans-serif;}
+        .introduction{margin-left: 30px;}
+        .bottom p{font-size:12px;font-family: "宋体", Verdana, Arial, Helvetica, sans-serif;margin-left: 30px;padding-top:10px;width:780px;color:#808080;}
+        .top ul{width:200px;float: right;list-style-type: none;margin-top:35px;padding-top:20px;}
+        .top ul li{float: left;}
+        .top ul li a{color:#fff;}
+    </style>
+</head>
+<body>
+
+<div class="top">
+    <img class="top-img" src="img/logo.gif" alt="">
+    <ul>
+        <li><a href="">新浪首页&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+        <li><a href="">&nbsp;&nbsp;&nbsp;&nbsp;帮助&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+    </ul>
+
+
+</div>
+
+<div id="box">
+    <img class="side" src="img/side.png" alt="">
+    <ul id="tab_nav">
+        <li id="phone"><a href="#t-1">手机注册</a></li>
+        <li id="mail"><a href="#t-2">邮箱注册</a></li>
+    </ul>
+    <div id="tab_content">
+        <!--手机注册-->
+        <div id="t-1" class="tab">
+            <img class="c-img" src="img/phone.png" alt="">
+            <ul>
+                <li><span>*</span>手机号码：<input class="msg" type="text"></li>
+                <p class="DirectLogin">使用微博账号直接<a href="#">登录</a></p>
+                <li><span>*</span>设置密码：<input class="msg" type="password"></li>
+                <li><span>*</span>兴趣标签：
+                    <input type="checkbox"> 新闻
+                    <input type="checkbox"> 娱乐
+                    <input type="checkbox"> 文化
+                    <input type="checkbox"> 体育
+                    <input type="checkbox"> IT
+                    <br/>
+                    <input class="turn" type="checkbox"> 财经
+                    <input type="checkbox"> 时尚
+                    <input type="checkbox"> 汽车
+                    <input type="checkbox"> 房产
+                    <input type="checkbox"> 生活</li>
+            </ul>
+            <p class="shortMsg"><span>*</span>上发短信手机：<input type="button" value="我要使用注册手机发送短信"></p>
+           <p class="protocol"><a href="">《新浪网络服务使用协议》</a></p>
+        </div>
+        <!--手机注册 END-->
+        <!--邮箱注册-->
+        <div id="t-2" class="tab">
+            <img class="c-img" src="img/email.png" alt="">
+
+            <ul>
+                <li><span>*</span>邮箱地址：<input class="msg" type="text">我没有邮箱</li>
+                <p class="DirectLogin">使用微博账号直接<a href="#">登录</a></p>
+                <li><span>*</span>设置密码：<input class="msg" type="password"></li>
+                <li><span>*</span>兴趣标签：
+                    <input type="checkbox"> 新闻
+                    <input type="checkbox"> 娱乐
+                    <input type="checkbox"> 文化
+                    <input type="checkbox"> 体育
+                    <input type="checkbox"> IT
+                    <br/>
+                    <input class="turn" type="checkbox"> 财经
+                    <input type="checkbox"> 时尚
+                    <input type="checkbox"> 汽车
+                    <input type="checkbox"> 房产
+                    <input type="checkbox"> 生活</li>
+            </ul>
+            <p class="code"><span>*</span>验证码</p>
+            <input class="register" type="button" value="立即注册">
+            <p class="protocol pto"><a href="">《新浪网络服务使用协议》</a></p>
+        </div>
+        <!--邮箱注册END-->
+    </div>
+    <div class="right">
+        <p>已有账号，<a>直接登录>></a></p>
+    </div>
+    <div class="bottom">
+        <ul>
+            <li class="introduction"><a href="">新浪简介</a></li>
+            <li><a href="">About Sina</a></li>
+            <li><a href="">广告服务</a></li>
+            <li><a href="">联系我们</a></li>
+            <li><a href="">招聘信息</a></li>
+            <li><a href="">网站律师</a></li>
+            <li><a href="">SINA ENGLISH</a></li>
+            <li><a href="">注册</a></li>
+            <li><a href="">产品答疑</a></li>
+        </ul>
+        <br/>
+        <p >客户服务电话  400-690-0000  欢迎批评指正</p>
+        <!--<br/>-->
+        <p>Copyright &copy; 1996  -  2018  SINA Corporation,All  Right  Reserved  新浪公司 <a href="">版权所有</a>  </p>
+
+    </div>
+</div>
+</body>
+</html>

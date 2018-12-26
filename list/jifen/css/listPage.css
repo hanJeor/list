@@ -1,0 +1,275 @@
+.center{
+    width:1200px;
+    height:1802px;
+    margin:0 auto;
+}
+.banner{
+    margin-top: 30px;
+    height:1696px;
+    background: white;
+    padding-top:26px;
+    padding-left: 25px;
+}
+.subNav{
+
+    width:1138px;
+    border:1px solid #eee;
+    /*border-top:2px solid #ff4400;*/
+
+}
+.subNav ul{height:51px;}
+.subNav li{
+    float: left;
+    width:161px;
+    height:51px;
+    text-align: center;
+    line-height: 51px;
+    border-right:1px solid #eee;
+    border-bottom:1px solid #eee;
+}
+.subNav a{
+    color:black;
+}
+.subNav .allGoods{
+    border-top:2px solid red;
+    height: 49px;
+}
+.subNav .allGoods a{
+    font-family: "微软雅黑";
+    font-weight: bold;
+    color:red;
+}
+
+.subNav .game{
+    width:165px;
+    border-right:0;
+}
+
+.radio-bg{
+    position: relative;
+    width:1138px;
+    height:45px;
+    border:1px solid #eee;
+    border-top:0;
+
+}
+.radio-bg li {
+    float: left;
+    padding: 0 10px 0 15px;
+    line-height: 45px;
+    font-size: 14px;
+    color: #474747;
+}
+
+.radio-bg li input {
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+.radio-bg ul{
+    list-style-type: none;
+}
+.radio-bg li{
+    height:44px;
+    float: left;
+}
+/*
+.radio-bg p{float: left;display: inline-block;margin-left:15px;}
+.r-bg-1{margin-left:25px;}
+*/
+.same{
+    position: absolute;
+    top: 20px;
+    width:9px;
+    height:9px;
+    margin-left: 4px;
+    background: url("../img/arrow.jpg")no-repeat;
+}
+.same2{
+    background-position: 0 -10px;
+}
+
+
+.select {
+    float: right;
+    position: relative;
+    margin-top: 8px;
+
+    width: 171px;
+
+    border: 1px solid #e9e9e9;
+    margin-right: 14px;
+    background: #fff;
+}
+
+.select span {
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 15px 0 10px;
+    background: url("../img/f_selbg.jpg") no-repeat 135px top;
+}
+
+.select ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 29px;
+    width: 171px;
+    background: #fff;
+    border: 1px solid #e9e9e9;
+    z-index: 1;
+}
+
+.select li {
+    padding-left: 10px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #474747;
+}
+.select li a{
+    color:black;
+}
+.select:hover span{background-position:135px -28px;}
+.select:hover ul {
+    display: block;
+}
+.select a:hover{
+    color:orangered;
+}
+
+
+
+/*.radio-bg select{
+    width: 171px;
+    height: 28px;
+    float: right;
+    border:1px solid #eee;
+    margin-right:14px;
+    margin-top:8px;
+}*/
+.c-banner ul{
+    list-style-type: none;
+}
+.c-banner ul li{
+    margin-right:25px;
+    width:206px;
+    height: 380px;
+    list-style:none;
+    float: left;
+    line-height: 21px;
+    font-family: "微软雅黑";
+    font-size:12px;
+}
+.c-banner a{
+    font-family: "微软雅黑";
+    color:black;
+    margin-top:14px;
+    display: block;
+    width:206px;
+    height:240px;
+}
+.c-banner a:hover{
+    color:orangered;
+}
+.c-banner img:hover{
+    z-index: 2;
+}
+.c-banner span{
+    float: left;
+    margin-top:11px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    color:red;
+}
+.c-banner img{
+    width:205px;
+    border:1px solid #eee;
+}
+
+
+.c-banner .list-img{
+    position: absolute;
+    float: left;
+    width:205px;
+    height:242px;
+    overflow: hidden;
+}/* 当溢出的时候隐藏*/
+.c-banner .list-img img:hover{
+    transform-origin: center center;
+    transform: scale(1.2);
+    transition: all .3s ease;
+
+}
+.msg{
+    float: left;
+    width:1175px;
+    margin: 0 auto;
+}
+.msg ul{
+    list-style-type: none;
+    width:570px;
+    height:50px;
+    margin:0 auto;
+}
+.msg ul li{
+    float: left;
+    width: 46px;
+    height: 30px;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    padding-top:17px;
+    border:1px solid #eee;
+}
+.msg a{
+    color: black;
+}
+.msg a:hover{
+    color:orangered;
+    font-weight: bold;
+
+}
+.msg .flag{
+    font-family: "宋体";
+    font-size: 12px;
+    float: left;
+    padding-top:15px;
+    padding-left:25px;
+}
+/*.msg .fl2{
+    margin-left: 14px;
+    margin-right:34px;
+}*/
+.msg input{
+    float: left;
+    width:32px;
+    height: 32px;
+}
+.msg .fl3{
+    display: inline-block;
+    float: left;
+    font-family: "宋体";
+    font-size: 12px;
+    padding-top:15px;
+}
+.msg .sure{
+    margin-left: 23px;
+    width: 94px;
+    height:48px;
+    background: #ff4401;
+    color:white;
+    font-size:12px;
+    border:0;
+}
+.c-banner .img-tag{
+    position: absolute;
+}
+.c-banner .goods-tag{
+    position: relative;
+    width:50px;
+    height:50px;
+    border:0;
+    top:0;
+    left:0;
+}

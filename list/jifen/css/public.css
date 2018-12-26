@@ -1,0 +1,289 @@
+/*公共样式*/
+body{
+    height: 2378px;
+    background-color: #f1f1f1;
+
+
+}
+/*有效区1200px*/
+.top{
+    height:172px;
+    background:url("../img/top-bg.jpg") no-repeat;
+    margin:0 auto;
+}
+
+.top ul{
+    width:1200px;
+    height:38px;
+    margin:0 auto;
+    list-style-type: none;
+}
+
+.top>ul>li{
+    height:38px;
+    font-size:12px;
+    line-height: 38px;
+    list-style:none;
+    float: left;
+    padding-right:29px;
+
+}
+
+.top ul>li>a{
+    color:#474747;
+    font-size:12px;
+}
+.top a:hover{
+    color:orangered;
+}
+
+/*.phone a{
+    margin-left: 55px;
+}*/
+/*公告*/
+.top .announcement{
+    float:right;
+    margin-right:180px;
+}
+
+/*指南区域*/
+.menu{
+    height: 92px;
+    padding-left:58px;
+    background-color: white;
+}
+
+.portrait{
+    margin-left: 178px;
+    margin-top:24px;
+}
+.menu .portrait{
+    float: left;
+    width:446px;
+    height:43px;
+    overflow: hidden;
+}/* 当溢出的时候隐藏*/
+.menu .portrait img:hover{
+    transform-origin: center center;
+    transform: scale(1.2);
+    transition: all .3s ease;
+
+}
+.menu a{
+    float: left;
+    line-height:65px;
+}
+.menu a img{
+    line-height: 92px;
+}
+
+.menu .logo{
+    float: left;
+}
+.inputbox{
+    float: left;
+    height:92px;
+    line-height:92px;
+}
+.input1{
+    margin-left: 53px;
+    height:23px;
+}
+.input2{
+    background-color: #ff4400;
+    height:29px;
+    border:none;
+    color:white;
+}
+/*导航栏*/
+.nav{
+    height: 42px;
+    background-color: #ff4400;
+}
+.nav ul{
+    width:1200px;
+    height:42px;
+    padding-left:60px;
+    list-style-type: none;
+}
+.nav ul li{
+    height:42px;
+    text-align: center;
+    width:135px;
+    list-style: none;
+    float: left;
+}
+.nav ul li a{
+    display: block;
+    width:135px;
+    height: 42px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 42px;
+    color: white;
+}
+.top .nav a:hover{
+    /*color: #f4c54f;*/
+    background:#e53e01;
+    color:white;
+    font-weight: bold;
+}
+.nav ul li a:active{
+    background: #e53e01;
+}
+.login{
+    margin-left: 90px;
+    background: url("../img/login-bg.jpg");
+}
+.login a:hover{
+    background:#e53e01;
+    opacity: 0.5;
+}
+
+.c-bottom{
+    float: left;
+    width:1318px;
+    height: 292px;
+    background-color: #dcdcdc;
+}
+.guild{
+    float: left;
+    margin-top:31px;
+    margin-left: 28px;
+    width: 186px;
+    height: 233px;
+    background-color: #d2d2d2;
+    overflow: hidden;
+}
+.guild1{
+    float: left;
+    margin-top:31px;
+    margin-left: 58px;
+    width: 186px;
+    height: 233px;
+    background-color: #d2d2d2;
+    overflow: hidden;
+}
+
+.guild img{
+    display: block;
+    margin-top:24px;
+    margin-left: 49px;
+}
+.guild a{
+    color: #3f505b;
+}
+.guild a:hover{
+    color:orangered;
+}
+.gz{
+    font-size: 16px;
+    margin-top:24px;
+    text-align: center;
+}
+
+.gf{
+
+    margin-top:5px;
+    font-size: 14px;
+    color:#939393;
+    text-align: center;
+
+}
+.gzh{
+    float: left;
+    margin-top:31px;
+    margin-left: 28px;
+    width: 186px;
+    height: 233px;
+    overflow: hidden;
+
+}
+/*福利*/
+.welfare {
+    margin-top:14px;
+    font-size: 16px;
+    text-align: center;
+    color:#474747;
+}
+/*二维码*/
+.code {
+    text-align: center;
+    margin-top:15px;
+}
+.gzh hr{
+    margin-top:26px;
+    margin-bottom:0px;
+}
+/*合作*/
+.cooperate {
+    font-size: 16px;
+    color:#474747;
+    text-align: center;
+    margin-top:15px;
+}
+.gzh span{
+    font-size: 14px;
+    color: #969696;
+}
+.bottom{
+    display: block;
+    float: left;
+    width:1318px;
+    height: 149px;
+    background: #c9c9c9;
+}
+.bottom ul{
+    height: 21px;
+    width: 848px;
+    margin:0 auto;
+    list-style-type: none;
+    padding-top:35px;
+}
+.bottom ul li{
+    float: left;
+    list-style: none;
+}
+.bottom a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #898989;
+}
+.bottom a:hover{
+    color:orangered;
+}
+.bottom p{
+    font-size: 14px;
+    color:#898989;
+    text-align: center;
+    margin-top:17px;
+}
+
+.up{
+    position:fixed;
+    right:0;
+    bottom:0;
+    width:40px;
+    height:40px;
+}
+/*推荐*/
+.title {
+    /*display: inline-block;*/
+    float: left;
+    margin-top:19px;
+    margin-left: 26px;
+    padding-left: 31px;
+    font-size:18px;
+    font-family: "微软雅黑";
+    background:url("../img/star.jpg")no-repeat;
+}
+.more{
+    float: right;
+    margin-right:30px;
+    padding-top:20px;
+}
+.more a{
+    font-size: 12px;
+    color:#969696;
+    text-decoration: none;
+}
