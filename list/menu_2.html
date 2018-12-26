@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Javascript</title>
+	<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+<nav>
+	<ul>
+		<li>
+		<a href="国美/index.html" data-item="0">
+			<span>国美</span>
+		</a>
+	</li>
+		<li>
+			<a href="xiaomi/index.html" data-item="1">
+				<span>小米商城</span>
+			</a>
+		</li>
+		<li>
+			<a href="demo/appleMenu.html" data-item="1">
+				<span>仿苹果任务栏</span>
+			</a>
+		</li>
+		<li>
+			<a href="demo/suprise.html" data-item="1">
+				<span>点击有惊喜</span>
+			</a>
+		</li>
+		<li>
+			<a href="index.html" data-item="0">
+				<span>返回上一级</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+	let rise = function(trigEl) {
+			trigEl.blur();
+
+			let ul = document.querySelector("ul");
+
+			ul.classList.add("rise");
+			trigEl.classList.add("pop");
+
+			setTimeout(function(){
+				trigEl.focus();
+
+				ul.classList.remove("rise");
+				trigEl.classList.remove("pop");
+			}, 1000);
+		};
+
+	this.querySelectorAll("li a").forEach(function(el){
+		let rt = document.querySelector(":root"),
+			di = +el.getAttribute("data-item");
+
+		el.addEventListener("blur",function(){
+			//var getRt = +window.getComputedStyle(el).getPropertyValue('--rotateTimes');
+			//console.log(getRt);
+			//this.classList.add("current");
+		});
+		el.addEventListener("focus",function(){
+			rt.style.setProperty("--rotateTimes",di);
+			//this.classList.remove("current");
+		});
+		el.addEventListener("dblclick",function(){
+			rise(this);
+		});
+		el.addEventListener("keyup",function(e){
+			if (e.keyCode === 13) {
+				rise(this);
+			}
+		});
+	});
+});
+</script>
+</body>
+</html>

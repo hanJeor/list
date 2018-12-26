@@ -1,0 +1,100 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5+CSS3</title>
+	<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+<nav>
+	<ul>
+		<li>
+		<a href="jifen/index.html" data-item="0">
+			<span>积分商城</span>
+		</a>
+	</li>
+		<li>
+			<a href="jiahang/index.html" data-item="1">
+				<span>佳航留学</span>
+			</a>
+		</li>
+		<li>
+			<a href="weibo/index.html" data-item="3">
+				<span>微博</span>
+			</a>
+		</li>
+	</ul>
+	<ul>
+		<li>
+			<a href="index.html" data-item="2">
+				<span>返回上一级</span>
+			</a>
+		</li>
+		<!--<li>
+			<a href="#music" data-item="1">
+				<span>Music</span>
+			</a>
+		</li>
+		<li>
+			<a href="#map" data-item="2">
+				<span>Map</span>
+			</a>
+		</li>
+		<li>
+			<a href="#wifi" data-item="3">
+				<span>Wi-Fi</span>
+			</a>
+		</li>
+		<li>
+			<a href="#settings" data-item="4">
+				<span>Settings</span>
+			</a>
+		</li>-->
+	</ul>
+</nav>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+	let rise = function(trigEl) {
+			trigEl.blur();
+
+			let ul = document.querySelector("ul");
+
+			ul.classList.add("rise");
+			trigEl.classList.add("pop");
+
+			setTimeout(function(){
+				trigEl.focus();
+
+				ul.classList.remove("rise");
+				trigEl.classList.remove("pop");
+			}, 1000);
+		};
+
+	this.querySelectorAll("li a").forEach(function(el){
+		let rt = document.querySelector(":root"),
+			di = +el.getAttribute("data-item");
+
+		el.addEventListener("blur",function(){
+			//var getRt = +window.getComputedStyle(el).getPropertyValue('--rotateTimes');
+			//console.log(getRt);
+			//this.classList.add("current");
+		});
+		el.addEventListener("focus",function(){
+			rt.style.setProperty("--rotateTimes",di);
+			//this.classList.remove("current");
+		});
+		el.addEventListener("dblclick",function(){
+			rise(this);
+		});
+		el.addEventListener("keyup",function(e){
+			if (e.keyCode === 13) {
+				rise(this);
+			}
+		});
+	});
+});
+</script>
+</body>
+</html>
