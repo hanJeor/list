@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	
+	<div class="header clearfix">
+		<div class="logo fl"><img src="images/logo1.png" /></div>
+		<div class="fr">
+			<ul class="fl head_nav fl">
+				<li><a href="neirongguanli.html" class="ico_t1">内容管理</a></li>
+				<li><a href="shenheguanli.html" class="ico_t2">审核管理</a></li>
+				<li class="hover"><a href="zhanghaobangding.html" class="ico_t3">系统设置</a></li>
+			</ul>
+			<div class="head_vip fl">
+				<img src="images/ico_t4.png" />Sysadmin
+			</div>
+			<dl class="msg fl">
+				<dt><img src="images/ico_t5.png" /><b></b></dt>
+				<dd>
+					<ul>
+						<li><a href="#">• 您有一条未审核信息，点击查看</a><span>2018.06.27</span></li>
+						<li><a href="#">• 您有一条未审核信息，点击查看</a><span>2018.06.27</span></li>
+						
+					</ul>
+					<div class="msg_more"><a href="tongzhixiaoxi.html">查看全部</a></div>
+				</dd>
+			</dl>
+			<div class="tui fl">
+				<a href="#"><img src="images/ico_t6.png" /></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="side_nav">
+		<ul class="set_nav">
+			<li><a href="zhanghaobangding.html">账号绑定</a></li>
+			<li><a href="#">角色管理</a></li>
+			<li><a href="#">用户管理</a></li>
+			<li class="hover"><a href="caozuorizhi.html">操作日志</a></li>
+			<li><a href="tongjifenxi.html">统计分析</a></li>
+			<li><a href="tongzhixiaoxi.html">通知消息</a></li>
+		</ul>
+	</div>
+	
+	<div class="main">
+	<div class="pad30">	
+		<div class="bor bgfff">
+			<div class="title"><strong>操作日志</strong></div>
+			<div class="pad10">
+			<div class="search bgfff">
+				<h3><img src="images/ico_ss.png">筛选查询</h3>
+				<ul class="clearfix">
+					<li><label>操作人员：</label><input type="text" value="" placeholder="用户名/账号" class="input_2"></li>
+					<li><label>操作日期：</label><input type="text" value="" placeholder="选择开始时间" class="input_2 ico_time " id="time_star"> - <input type="text" value="" placeholder="选择结束时间" class="input_2 ico_time " id="time_end"></li>
+					
+				</ul>		
+			</div>
+			
+			<dl class="mt10 list_yifa">
+				<dt class="clearfix bgf3">
+					<h3><img src="images/ico_8.png">数据列表</h3>
+				</dt>
+				<dd class="table1">
+					<table>
+						<tr>
+							<th>&nbsp;</th>
+							<th>账号</th>
+							<th>操作者</th>
+							<th>操作日期</th>
+							<th>IP地址</th>
+							<th>操作记录</th>
+						</tr>
+						<tr>
+							<td class="text_left"><input type="checkbox" class="check_item" /></td>
+							<td>1000001</td>
+							<td>admin</td>
+							<td>2017-07-07 16:58:11</td>
+							<td>220.231.210.22</td>
+							<td>编辑会员账号: windir</td>
+						</tr>
+						<tr>
+							<td class="text_left"><input type="checkbox" class="check_item" /></td>
+							<td>1000001</td>
+							<td>admin</td>
+							<td>2017-07-07 16:58:11</td>
+							<td>220.231.210.22</td>
+							<td>编辑会员账号: windir</td>
+						</tr>
+						<tr>
+							<td class="text_left"><input type="checkbox" class="check_item" /></td>
+							<td>1000001</td>
+							<td>admin</td>
+							<td>2017-07-07 16:58:11</td>
+							<td>220.231.210.22</td>
+							<td>编辑会员账号: windir</td>
+						</tr>
+						<tr>
+							<td colspan="3" class="text_left" style="border-right:none;">
+								<label class="all_check_label"><input type="checkbox" class="all_check" /> 全选</label>
+								<div class="btn-group">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">批量操作<span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<li><a href="#">删除</a></li>
+									</ul>
+								</div>
+							</td>
+							<td colspan="3" class="text_right" style="border-left:none;">
+								<span class="data_bulk">共<font class="red">10</font>页/<font class="red">100</font>条数据</span>
+								<span class="table_page">
+									<a href="#">&lt;</a><a href="#" class="hover">1</a><a href="#">2</a><a href="#">3</a><a >...</a><a href="#">10</a><a href="#">&gt;</a>
+								</span>
+							</td>
+						</tr>
+
+					</table>
+				</dd>
+			</dl>
+			
+			</div>
+			
+		</div>
+		
+	</div>
+	</div>
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/allCheck.js"></script>
+	<script src="laydate/laydate.js"></script>
+	<script>
+	$(function(){
+		laydate.render({
+		  elem: '#time_star'
+		  ,max: 0
+		});
+		laydate.render({
+		  elem: '#time_end'
+		  ,max: 0
+		});
+
+	});
+		
+	</script>
+</body>
+</html>

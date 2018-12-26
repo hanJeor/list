@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/fileinput.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	
+	<div class="header clearfix">
+		<div class="logo fl"><img src="images/logo1.png" /></div>
+		<div class="fr">
+			<ul class="fl head_nav fl">
+				<li class="hover"><a href="neirongguanli.html" class="ico_t1">内容管理</a></li>
+				<li><a href="shenheguanli.html" class="ico_t2">审核管理</a></li>
+				<li><a href="zhanghaobangding.html" class="ico_t3">系统设置</a></li>
+			</ul>
+			<div class="head_vip fl">
+				<img src="images/ico_t4.png" />Sysadmin
+			</div>
+			<dl class="msg fl">
+				<dt><img src="images/ico_t5.png" /><b></b></dt>
+				<dd>
+					<ul>
+						<li><a href="#">• 您有一条未审核信息，点击查看</a><span>2018.06.27</span></li>
+						<li><a href="#">• 您有一条未审核信息，点击查看</a><span>2018.06.27</span></li>
+					</ul>
+					<div class="msg_more"><a href="tongzhixiaoxi.html">查看全部</a></div>
+				</dd>
+			</dl>
+			<div class="tui fl">
+				<a href="#"><img src="images/ico_t6.png" /></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="side_nav">
+		
+		<div class="side_search">
+			<input type="text" value="" placeholder="搜索公众号" class="input_ss" /><input type="image" src="images/ico_ss1.png" class="btn_ss" />
+		</div>
+		
+		<dl>
+			<dt data-toggle="collapse" data-parent="#accordion" data-target="#collapse1"  aria-expanded="true"><img src="images/ico_n.png" />中科院之声</dt>
+			<dd id="collapse1" class="collapse in">
+				<ul class="side_info clearfix">
+					<li>125<p>关注</p></li>
+					<li>20<p>粉丝</p></li>
+					<li>154<p>微博</p></li>
+				</ul>
+				<ul class="side_menu">
+					<li class="hover"><a href="neirongguanli.html"><em><img src="images/ico_n1.png" /></em>发布微博</a></li>
+					<li><a href="wodeweibo.html"><em><img src="images/ico_n2.png" /></em>我的微博</a></li>
+					<li><a href="guanzhu.html"><em><img src="images/ico_n3.png" /></em>关注的微博</a></li>
+					<li><a href="fensiguanli.html"><em><img src="images/ico_n4.png" /></em>粉丝管理</a></li>
+					<li><a href="pinglun.html"><em><img src="images/ico_n5.png" /></em>评论</a></li>
+					<li><a href="@me.html"><em><img src="images/ico_n6.png" /></em>@我</a></li>
+					<li><a href="zan.html"><em><img src="images/ico_n7.png" /></em>赞</a></li>
+					<li><a href="shoucang.html"><em><img src="images/ico_n8.png" /></em>收藏</a></li>
+					<li><a href="wodezhaopian.html"><em><img src="images/ico_n9.png" /></em>我的相册</a></li>
+					<li><a href="sixin.html"><em><img src="images/ico_n10.png" /></em>私信</a></li>
+					<li><a href="toutiaowenzhang.html"><em><img src="images/ico_n11.png" /></em>头条文章</a></li>
+					<li><a href="shujugailan.html"><em><img src="images/ico_n12.png" /></em>数据概览</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl>
+			<dt class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse2"  aria-expanded="false"><img src="images/ico_n.png" />中科院之声</dt>
+			<dd id="collapse2" class="collapse">
+				<ul class="side_info clearfix">
+					<li>125<p>关注</p></li>
+					<li>20<p>粉丝</p></li>
+					<li>154<p>微博</p></li>
+				</ul>
+				<ul class="side_menu">
+					<li><a href="#"><em><img src="images/ico_n1.png" /></em>发布微博</a></li>
+					<li><a href="#"><em><img src="images/ico_n2.png" /></em>我的微博</a></li>
+					<li><a href="#"><em><img src="images/ico_n3.png" /></em>关注的微博</a></li>
+					<li><a href="#"><em><img src="images/ico_n4.png" /></em>粉丝管理</a></li>
+					<li><a href="#"><em><img src="images/ico_n5.png" /></em>评论</a></li>
+					<li><a href="#"><em><img src="images/ico_n6.png" /></em>@我</a></li>
+					<li><a href="#"><em><img src="images/ico_n7.png" /></em>赞</a></li>
+					<li><a href="#"><em><img src="images/ico_n8.png" /></em>收藏</a></li>
+					<li><a href="#"><em><img src="images/ico_n9.png" /></em>我的相册</a></li>
+					<li><a href="#"><em><img src="images/ico_n10.png" /></em>私信</a></li>
+					<li><a href="#"><em><img src="images/ico_n11.png" /></em>头条文章</a></li>
+					<li><a href="#"><em><img src="images/ico_n12.png" /></em>数据概览</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl>
+			<dt class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse3"  aria-expanded="false"><img src="images/ico_n.png" />中科院之声</dt>
+			<dd id="collapse3" class="collapse">
+				<ul class="side_info clearfix">
+					<li>125<p>关注</p></li>
+					<li>20<p>粉丝</p></li>
+					<li>154<p>微博</p></li>
+				</ul>
+				<ul class="side_menu">
+					<li><a href="#"><em><img src="images/ico_n1.png" /></em>发布微博</a></li>
+					<li><a href="#"><em><img src="images/ico_n2.png" /></em>我的微博</a></li>
+					<li><a href="#"><em><img src="images/ico_n3.png" /></em>关注的微博</a></li>
+					<li><a href="#"><em><img src="images/ico_n4.png" /></em>粉丝管理</a></li>
+					<li><a href="#"><em><img src="images/ico_n5.png" /></em>评论</a></li>
+					<li><a href="#"><em><img src="images/ico_n6.png" /></em>@我</a></li>
+					<li><a href="#"><em><img src="images/ico_n7.png" /></em>赞</a></li>
+					<li><a href="#"><em><img src="images/ico_n8.png" /></em>收藏</a></li>
+					<li><a href="#"><em><img src="images/ico_n9.png" /></em>我的相册</a></li>
+					<li><a href="#"><em><img src="images/ico_n10.png" /></em>私信</a></li>
+					<li><a href="#"><em><img src="images/ico_n11.png" /></em>头条文章</a></li>
+					<li><a href="#"><em><img src="images/ico_n12.png" /></em>数据概览</a></li>
+				</ul>
+			</dd>
+		</dl>
+		
+	</div>
+	
+	<div class="main ">
+		<div class="pad30">
+			
+			<div class="bgfff bor">
+				<div class="clearfix bor_down">
+					<ul class="fa_nav fl">
+						<li class="trigger">表情</li>
+						<li class="js_photo"><form id="photoForm"><img src="images/tab_nav2.png" />图片<input type="file" accept="image/*" class="js_up_img" onchange="loadPhoto()" /></form></li>
+						<li><form id="videoForm"><img src="images/tab_nav3.png" />视频<input type="file" accept="video/*" class="js_up_img"  /></form></li>
+						<li data-toggle="modal" data-target="#topicsModal"><img src="images/tab_nav4.png" />话题</li>
+						<li data-toggle="modal" data-target="#remarkModal"><img src="images/tab_nav5.png" />点评</li>
+						<li class="js_fa_time"><img src="images/tab_nav6.png" />定时发送</li>
+						<li data-toggle="modal" data-target="#resourceModal"><img src="images/tab_nav7.png" />从资源目录选择</li>
+						<li data-toggle="modal" data-target="#recommendModal"><img src="images/tab_nav8.png" />从推荐稿件库中选择</li>
+					</ul>
+					
+					
+					<div class="dropdown_fa fr">
+						<a href="javascript:;" id="dLabel" type="button" data-toggle="dropdown">
+							<span>公开</span> <img src="images/ico_down2.png" />
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="dLabel">
+							<li><a href="javascript:;">公开</a></li>
+							<li><a href="javascript:;">朋友圈</a></li>
+							<li><a href="javascript:;">仅自己可见</a></li>
+						</ul>
+					</div>
+					
+				</div>
+				
+				<textarea class="fa_textarea" name="content"  placeholder="有什么新鲜事想要告诉大家!"></textarea>
+				
+				<!--定时发送-->
+				<div class="fa_time bgf6 bor_top clearfix" style="display: none;">
+					<label>发布时间：</label><input type="text" placeholder="请选择发布时间" value="" id="fa_time" class="input_time fl" /><label>下一条增加</label><input type="text" value="5" class="input_30 fl" /><label>分钟</label>
+					<div class="close_time"><img src="images/ico_close1.png" width="12" /></div>
+				</div>
+				
+			</div>
+			
+			<div class="textarea_num">
+				已输入<b>0</b>字
+			</div>
+			
+			
+			
+			<!--模板-图片附件-->
+			<div class="fujian" style="display: none;">
+				<h3>图片附件 <img class="close_img" src="images/ico_close1.png" width="12" /></h3>
+				<p>共 2 张，还能上传 7 张</p>
+				<ul class="clearfix">
+					<li><img src="images/ph_5.jpg" /></li>
+					<li class="add_photo">
+						<form id="imgForm">
+							<img src="images/ico_add.png" /><input type="file" accept="image/gif,image/jpeg,image/jpg,image/png" class="js_up_img" onchange="loadImg()" />
+						</form>
+					</li>
+					<li><a href="javascript:;" class="add_tag">＋标签</a></li>
+				</ul>
+			</div>
+			
+			<div class="btn_fa">
+				<input type="button" value="保存" class="btn mr10 btn_blue" /><input type="button" value="发布" class="btn btn_blue1" />
+			</div>
+
+		</div>
+	</div>
+	
+	<!--话题 - 弹出框-->
+	<div class="modal fade" id="topicsModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bgf3">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body ">
+					<div class="topics_tit">
+						<b>#</b> 插入话题 <b>#</b>
+					</div>
+					<div class="re_tui">
+						<h3>热门推荐：</h3>
+						<ul class="clearfix">
+							<li>
+								<em><img src="images/ph_7.jpg" /></em>
+								<p>
+									<strong>西虹市首富1</strong>
+									讲述了王多鱼（沈腾饰）意外获得十亿资金，却必需在一个月内花光的搞笑故事。
+								</p>
+							</li>
+							<li>
+								<em><img src="images/ph_8.jpg" /></em>
+								<p>
+									<strong>西虹市首富2</strong>
+									讲述了王多鱼（沈腾饰）意外获得十亿资金，却必需在一个月内花光的搞笑故事。
+								</p>
+							</li>
+							<li>
+								<em><img src="images/ph_7.jpg" /></em>
+								<p>
+									<strong>西虹市首富3</strong>
+									讲述了王多鱼（沈腾饰）意外获得十亿资金，却必需在一个月内花光的搞笑故事。
+								</p>
+							</li>
+							<li>
+								<em><img src="images/ph_8.jpg" /></em>
+								<p>
+									<strong>西虹市首富4</strong>
+									讲述了王多鱼（沈腾饰）意外获得十亿资金，却必需在一个月内花光的搞笑故事。
+								</p>
+							</li>
+							<li>
+								<em><img src="images/ph_7.jpg" /></em>
+								<p>
+									<strong>西虹市首富5</strong>
+									讲述了王多鱼（沈腾饰）意外获得十亿资金，却必需在一个月内花光的搞笑故事。
+								</p>
+							</li>
+							<li>
+								<em><img src="images/ph_8.jpg" /></em>
+								<p>
+									<strong>西虹市首富</strong>
+									讲述了王多鱼（沈腾饰）意外获得十亿资金，却必需在一个月内花光的搞笑故事。
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<!--点评 - 弹出框-->
+	<div class="modal fade" id="remarkModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body ">
+					
+					<div class="remark_search">
+						<input type="text" value="" placeholder="你在看什么电影?" />
+						<input type="button" value="搜索"  />
+					</div>
+					
+					<div class="re_tui">
+						<h3>热门电影：</h3>
+						<ul class="clearfix">
+							<li>
+								<em><img src="images/ph_7.jpg" /></em>
+								<p>
+									<strong>西虹市首富1</strong>
+									讲述了王多鱼（沈腾饰）意外获得十亿资金，却必需在一个月内花光的搞笑故事。
+								</p>
+							</li>
+							<li>
+								<em><img src="images/ph_8.jpg" /></em>
+								<p>
+									<strong>西虹市首富2</strong>
+									讲述了王多鱼（沈腾饰）意外获得十亿资金，却必需在一个月内花光的搞笑故事。
+								</p>
+							</li>
+							<li>
+								<em><img src="images/ph_7.jpg" /></em>
+								<p>
+									<strong>西虹市首富3</strong>
+									讲述了王多鱼（沈腾饰）意外获得十亿资金，却必需在一个月内花光的搞笑故事。
+								</p>
+							</li>
+							<li>
+								<em><img src="images/ph_8.jpg" /></em>
+								<p>
+									<strong>西虹市首富4</strong>
+									讲述了王多鱼（沈腾饰）意外获得十亿资金，却必需在一个月内花光的搞笑故事。
+								</p>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="remark_qita">
+						<h3>点评其他:</h3>
+						<ul class="clearfix">
+							<li><img src="images/ico_16.png" />音乐</li>
+							<li><img src="images/ico_17.png" />读书</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	
+	<!--资源目录 - 弹出框-->
+	<div class="modal fade " id="resourceModal" >
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header bgf3">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="resourceModalLabel">从资源目录中选择</h4>
+				</div>
+				<div class="modal-body ">
+					<div class="search">
+						<h3><img src="images/ico_ss.png">筛选查询</h3>
+						<ul class="clearfix">
+							<li><label>标题：</label><input type="text" value="" placeholder="标题" class="input_2"></li>
+							<li><label>URL：</label><input type="text" value="" placeholder="标题" class="input_2"></li>
+							<li><label>状态：</label>
+								<select class="selectpicker"><option>未采用</option><option>已采用未发布</option><option>已采用并发布</option></select>
+							</li>
+							<li><label>发稿人：</label><input type="text" value="" placeholder="" class="input_2"></li>
+							<li><label>&nbsp;</label><button class="btn btn_c">查询</button></li>
+						</ul>		
+					</div>
+					
+					<div class="table_bor mt10">
+					<table>
+						<tr>
+							<th>&nbsp;</th>
+							<th>序号</th>
+							<th>文档标题</th>
+							<th>创建时间</th>
+							<th>发稿人</th>
+							<th>所属组织</th>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>1</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>2</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>3</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>4</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>5</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>6</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>7</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>8</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>9</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>10</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+						</tr>
+					</table>
+					</div>
+					
+					<nav aria-label="Page navigation">
+					  <ul class="pagination">
+					    <li>
+					      <a href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li  class="active"><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li>
+					      <a href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					  </ul>
+					</nav>
+				
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn_blue" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn_blue1 js_appmsg">确认</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<!--推荐稿件库 - 弹出框-->
+	<div class="modal fade" id="recommendModal">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header bgf3">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="recommendModalLabel">从推荐稿件库中选择素材</h4>
+				</div>
+				<div class="modal-body ">
+					<div class="search">
+						<h3><img src="images/ico_ss.png">筛选查询</h3>
+						<ul class="clearfix">
+							<li><label>标题：</label><input type="text" value="" placeholder="标题" class="input_2"></li>
+							<li><label>状态：</label>
+								<select class="selectpicker"><option>未采用</option><option>已采用未发布</option><option>已采用并发布</option></select>
+							</li>
+							<li><label>来源系统：</label>
+								<select class="selectpicker">
+									<option value="请选择">请选择</option>
+									<option value="院级中文网站">院级中文网站</option>
+									<option value="科普传播网站">科普传播网站</option>
+									<option value="所级中文网站">所级中文网站</option>
+									<option value="其他机构网站">其他机构网站</option>
+									<option value="院所英文网站">院所英文网站</option>
+									<option value="英文定制网站">英文定制网站</option>
+									<option value="院属下级网站1">院属下级网站1</option>
+									<option value="院属下级网站2">院属下级网站2</option>
+									<option value="院属下级网站3">院属下级网站3</option>
+									<option value="微信公众号">微信公众号</option>
+									<option value="新浪微博">新浪微博</option>
+								</select>
+							</li>
+							<li><label>来源站点：</label><input type="text" value="" placeholder="" class="input_2"></li>
+							<li><label>推送用户：</label><input type="text" value="" placeholder="" class="input_2"></li>
+							<li><label>&nbsp;</label><button class="btn btn_c">查询</button></li>
+						</ul>		
+					</div>
+					
+					<div class="table_bor mt15">
+					<table>
+						<tr>
+							<th>&nbsp;</th>
+							<th>序号</th>
+							<th>文档标题</th>
+							<th>推送时间</th>
+							<th>推送用户</th>
+							<th>来源系统</th>
+							<th>来源站点(公众号)</th>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>1</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+							<td>北京分院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>2</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+							<td>北京分院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>3</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+							<td>北京分院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>4</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+							<td>北京分院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>5</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+							<td>北京分院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>6</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+							<td>北京分院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>7</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+							<td>北京分院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>8</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+							<td>北京分院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>9</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+							<td>北京分院</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>10</td>
+							<td class="text_left">中科院与安徽省召开院省合作建设领导小组会议</td>
+							<td>2016-12-18</td>
+							<td>admin_241711</td>
+							<td>中国科学院</td>
+							<td>北京分院</td>
+						</tr>
+					</table>
+					</div>
+					
+					<nav aria-label="Page navigation">
+					  <ul class="pagination">
+					    <li>
+					      <a href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li  class="active"><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li>
+					      <a href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					  </ul>
+					</nav>
+				
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn_blue" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn_blue1 js_recommend">确认</button>
+				</div>
+				
+				
+				
+				
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="laydate/laydate.js"></script>
+	<script src="js/fileinput.min.js"></script>
+	<script src="js/fileinput_locale_zh.js"></script>
+	<script src="js/jquery.emoticons.js"></script>
+
+	<script>
+		laydate.render({
+			elem: '#fa_day'
+		});
+		laydate.render({
+			elem: '#fa_time'
+			,type: 'datetime'
+		});
+		
+		/*表情*/
+		$.emoticons({
+			left:8,
+			top:-12,
+			'triggerCls':'trigger',
+			'faceText':'fa_textarea'
+		});
+				
+		
+		$('.dropdown_fa .dropdown-menu li a').on('click', function () {
+			$(".dropdown_fa a:eq(0) span").html($(this).html())
+		})
+		
+		/*删除附件*/
+		$(".close_img").click(function(){
+			$(this).parents(".fujian").hide();
+		})
+		
+		/*定时发送*/
+		$(".js_fa_time").click(function(){
+			$(".fa_time").show();
+		})
+		/*删除定时发送*/
+		$(".close_time").click(function(){
+			$(this).parents(".fa_time").hide();
+		})
+		
+		/*字数限制*/
+		$(".fa_textarea").on("input propertychange focus", function() {
+			var $this = $(this),
+			    _val = $this.val(),
+			    count = "";
+			if (_val.length > 600) {
+			    $this.val(_val.substring(0, 600));
+			}
+			count = $this.val().length;
+			$(".textarea_num b").text(count);
+		});
+		
+		
+		$(".js_appmsg").click(function(){
+			$("#resourceModal").modal("hide");
+			$(".fujian").show();
+		})
+
+		$(".js_recommend").click(function(){
+			$("#recommendModal").modal("hide");
+			$(".fujian").show();
+		})
+		
+		
+		$(".topics_tit,.re_tui li").click(function(){
+			$("#topicsModal").modal("hide");
+			$("#remarkModal").modal("hide");
+			
+			var vall = $(this).find("strong").html();
+			
+			$(".fa_textarea").val($(".fa_textarea").val()+" "+"#"+vall+"#");
+			$(".fa_textarea").focus()
+		})
+		
+		
+		$(".js_photo").click(function(){
+			//$(".fujian").show();
+		})
+		
+		/*图片上传*/
+		function loadPhoto(){
+			
+		    //获取文件
+		    var file = $("#photoForm").find("input")[0].files[0];
+
+		    //创建读取文件的对象
+		    var reader = new FileReader();
+
+		    //创建文件读取相关的变量
+		    var photoFile;
+			$(".fujian").show();
+		    //为文件读取成功设置事件
+		    reader.onload=function(e) {
+			//alert('文件读取完成');
+			photoFile = e.target.result;
+			console.log(photoFile);
+			//$("#imgContent").attr('src', imgFile);
+			
+			$(".add_photo").before("<li><img src='"+photoFile+"' /></li>");
+			
+		    };
+
+		    //正式读取文件
+		    reader.readAsDataURL(file);
+		}
+		
+		/*图片上传*/
+		function loadImg(){
+			
+		    //获取文件
+		    var file = $("#imgForm").find("input")[0].files[0];
+
+		    //创建读取文件的对象
+		    var reader = new FileReader();
+
+		    //创建文件读取相关的变量
+		    var imgFile;
+
+		    //为文件读取成功设置事件
+		    reader.onload=function(e) {
+			//alert('文件读取完成');
+			imgFile = e.target.result;
+			console.log(imgFile);
+			//$("#imgContent").attr('src', imgFile);
+			
+			$(".add_photo").before("<li><img src='"+imgFile+"' /></li>");
+			
+		    };
+
+		    //正式读取文件
+		    reader.readAsDataURL(file);
+		}
+		
+	</script>
+</body>
+</html>

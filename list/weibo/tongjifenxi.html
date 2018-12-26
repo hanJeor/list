@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	
+	<div class="header clearfix">
+		<div class="logo fl"><img src="images/logo1.png" /></div>
+		<div class="fr">
+			<ul class="fl head_nav fl">
+				<li><a href="neirongguanli.html" class="ico_t1">内容管理</a></li>
+				<li><a href="shenheguanli.html" class="ico_t2">审核管理</a></li>
+				<li class="hover"><a href="zhanghaobangding.html" class="ico_t3">系统设置</a></li>
+			</ul>
+			<div class="head_vip fl">
+				<img src="images/ico_t4.png" />Sysadmin
+			</div>
+			<dl class="msg fl">
+				<dt><img src="images/ico_t5.png" /><b></b></dt>
+				<dd>
+					<ul>
+						<li><a href="#">• 您有一条未审核信息，点击查看</a><span>2018.06.27</span></li>
+						<li><a href="#">• 您有一条未审核信息，点击查看</a><span>2018.06.27</span></li>
+						
+					</ul>
+					<div class="msg_more"><a href="tongzhixiaoxi.html#">查看全部</a></div>
+				</dd>
+			</dl>
+			<div class="tui fl">
+				<a href="#"><img src="images/ico_t6.png" /></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="side_nav">
+		<ul class="set_nav">
+			<li><a href="zhanghaobangding.html">账号绑定</a></li>
+			<li><a href="#">角色管理</a></li>
+			<li><a href="#">用户管理</a></li>
+			<li><a href="caozuorizhi.html">操作日志</a></li>
+			<li class="hover"><a href="tongjifenxi.html">统计分析</a></li>
+			<li><a href="tongzhixiaoxi.html">通知消息</a></li>
+		</ul>
+	</div>
+	
+	<div class="main pad30">
+	<div class="pad30">	
+		<div class="bor bgfff">
+			<div class="title"><strong>统计分析</strong></div>
+			
+			<div class="analyze_list clearfix">
+				<dl class="mt10">
+					<dt class="clearfix bgf3">
+						<h3><img src="images/ico_8.png">公众号数量统计</h3>
+					</dt>
+					<dd>
+						<canvas id="myChart" width="400" height="400"></canvas>
+					</dd>
+				</dl>
+				<dl class="mt10">
+					<dt class="clearfix bgf3">
+						<h3><img src="images/ico_8.png">系统整体发稿统计</h3>
+					</dt>
+					<dd>
+						<canvas id="polarAreaChart" width="400" height="400"></canvas>
+						
+					</dd>
+				</dl>
+				<dl class="mt10">
+					<dt class="clearfix bgf3">
+						<h3><img src="images/ico_8.png">公众号发稿排行</h3>
+					</dt>
+					<dd>
+						<canvas id="pieChart" width="400" height="400"></canvas>
+						
+					</dd>
+				</dl>
+				<dl class="mt10">
+					<dt class="clearfix bgf3">
+						<h3><img src="images/ico_8.png">系统用户统计</h3>
+					</dt>
+					<dd>
+						<canvas id="barChart" width="400" height="400"></canvas>
+						
+					</dd>
+				</dl>
+			</div>
+
+			
+		</div>
+		
+	</div>
+	</div>
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/Chart.min.js"></script>
+
+	<script>
+	var ctx = document.getElementById("myChart").getContext('2d');
+	var myChart = new Chart(ctx, {
+	    type: 'bar',
+	    data: {
+		labels: ["北京分院", "沈阳分院", "上海分院", "南京分院", "广州分院", "武汉分院"],
+		datasets: [{
+		    label: '公众号数量统计',
+		    data: [120, 190, 335, 105, 260, 203],
+		    backgroundColor: [
+			'rgba(255, 99, 132, 1)',
+			'rgba(54, 162, 235, 1)',
+			'rgba(255, 206, 86, 1)',
+			'rgba(75, 192, 192, 1)',
+			'rgba(153, 102, 255, 1)',
+			'rgba(255, 159, 64, 1)'
+		    ],
+		    borderColor: [
+			'rgba(255,99,132,1)',
+			'rgba(54, 162, 235, 1)',
+			'rgba(255, 206, 86, 1)',
+			'rgba(75, 192, 192, 1)',
+			'rgba(153, 102, 255, 1)',
+			'rgba(255, 159, 64, 1)'
+		    ],
+		    borderWidth: 1
+		}]
+	    },
+	    options: {
+	    	legend: {
+					display: false
+				},
+		scales: {
+		    yAxes: [{
+			ticks: {
+			    beginAtZero:true
+			}
+		    }]
+		}
+	    }
+	});
+	
+	
+	
+	var ctx2 = document.getElementById("polarAreaChart").getContext('2d');
+	var myChart = new Chart(ctx2, {
+	    type: 'polarArea',
+	    data: {
+		labels: ["北京分院", "沈阳分院", "上海分院", "南京分院", "广州分院", "武汉分院"],
+		datasets: [{
+		    label: '公众号数量统计',
+		    data: [120, 190, 335, 105, 260, 203],
+		    backgroundColor: [
+			'rgba(255, 99, 132, 1)',
+			'rgba(54, 162, 235, 1)',
+			'rgba(255, 206, 86, 1)',
+			'rgba(75, 192, 192, 1)',
+			'rgba(153, 102, 255, 1)',
+			'rgba(255, 159, 64, 1)'
+		    ],
+		    borderColor: [
+			'rgba(255,99,132,1)',
+			'rgba(54, 162, 235, 1)',
+			'rgba(255, 206, 86, 1)',
+			'rgba(75, 192, 192, 1)',
+			'rgba(153, 102, 255, 1)',
+			'rgba(255, 159, 64, 1)'
+		    ],
+		    borderWidth: 1,
+		  
+		}]
+	    },
+	    options: {
+	    
+		scales: {
+			  xAxes: [{
+		    	display:false,
+			}],
+			
+		    yAxes: [{
+		    	
+			display:false,
+			ticks: {
+			    beginAtZero:true
+			}
+		    }]
+		}
+	    }
+	});
+	
+	var ctx3 = document.getElementById("pieChart").getContext('2d');
+	var myChart = new Chart(ctx3, {
+	    type: 'pie',
+	    data: {
+		labels: ["北京分院", "沈阳分院", "上海分院", "南京分院", "广州分院", "武汉分院"],
+		datasets: [{
+		    label: '公众号数量统计',
+		    data: [120, 190, 335, 105, 260, 203],
+		    backgroundColor: [
+			'rgba(255, 99, 132, 1)',
+			'rgba(54, 162, 235, 1)',
+			'rgba(255, 206, 86, 1)',
+			'rgba(75, 192, 192, 1)',
+			'rgba(153, 102, 255, 1)',
+			'rgba(255, 159, 64, 1)'
+		    ],
+		    borderColor: [
+			'rgba(255,99,132,1)',
+			'rgba(54, 162, 235, 1)',
+			'rgba(255, 206, 86, 1)',
+			'rgba(75, 192, 192, 1)',
+			'rgba(153, 102, 255, 1)',
+			'rgba(255, 159, 64, 1)'
+		    ],
+		    borderWidth: 1,
+		  
+		}]
+	    },
+	    options: {
+	    
+		scales: {
+			  xAxes: [{
+		    	display:false,
+			}],
+			
+		    yAxes: [{
+		    	
+			display:false,
+			ticks: {
+			    beginAtZero:true
+			}
+		    }]
+		}
+	    }
+	});
+	
+	
+	var ctx4 = document.getElementById("barChart").getContext('2d');
+	var myChart = new Chart(ctx4, {
+	    type: 'horizontalBar',
+	    data: {
+		labels: ["北京分院", "沈阳分院", "上海分院", "南京分院", "广州分院", "武汉分院"],
+		datasets: [{
+		    label: '系统用户统计',
+		    data: [120, 190, 335, 105, 260, 203],
+		    backgroundColor: [
+			'rgba(255, 99, 132, 1)',
+			'rgba(54, 162, 235, 1)',
+			'rgba(255, 206, 86, 1)',
+			'rgba(75, 192, 192, 1)',
+			'rgba(153, 102, 255, 1)',
+			'rgba(255, 159, 64, 1)'
+		    ],
+		    borderColor: [
+			'rgba(255,99,132,1)',
+			'rgba(54, 162, 235, 1)',
+			'rgba(255, 206, 86, 1)',
+			'rgba(75, 192, 192, 1)',
+			'rgba(153, 102, 255, 1)',
+			'rgba(255, 159, 64, 1)'
+		    ],
+		    borderWidth: 1,
+		  
+		}]
+	    },
+	    options: {
+	    	legend: {
+					display: false
+				},
+		scales: {
+			
+		    yAxes: [{
+			ticks: {
+			    beginAtZero:true
+			}
+		    }]
+		}
+	    }
+	});
+	
+	
+	</script>
+	
+</body>
+</html>

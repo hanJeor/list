@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<style>
+table,td{
+	border: 1px solid #ddd;padding: 5px 50px;
+}
+.search .name{position:relative;float:left;width:220px;line-height:35px;padding-left:20px;margin-left:10px;font-size:16px;color:#161616;border:1px #cdc7c3 solid;
+	background:url(images/s_ico.jpg) no-repeat 195px 15px;text-align: left}
+.search .name .txt{float:left;width:100%;cursor: pointer;}
+.search .name ul{display:none;float:left;position:absolute;left:-1px;top:35px;width:125px;border:1px #cdc7c3 solid;width: 100%;height: 125px;
+	overflow-y: scroll;background-color: white}
+.search .name li{float:left;width:100%;height:35px;line-height:35px;padding-left:20px;}
+.search .name li input{height: 26px;border: 1px #ccc solid;line-height: 26px;
+	width: 90%;
+	padding-left: 5%;
+	font-size: 14px;}
+.search .name li a{color:#161616}
+.search .name .single{display:block;}
+</style>
+</head>
+<body>
+	
+	<div class="header clearfix">
+		<div class="logo fl"><img src="images/logo1.png" /></div>
+		<div class="fr">
+			<ul class="fl head_nav fl">
+				<li><a href="neirongguanli.html" class="ico_t1">内容管理</a></li>
+				<li><a href="shenheguanli.html" class="ico_t2">审核管理</a></li>
+				<li class="hover"><a href="zhanghaobangding.html" class="ico_t3">系统设置</a></li>
+			</ul>
+			<div class="head_vip fl">
+				<img src="images/ico_t4.png" />Sysadmin
+			</div>
+			<dl class="msg fl">
+				<dt><img src="images/ico_t5.png" /><b></b></dt>
+				<dd>
+					<ul>
+						<li><a href="#">• 您有一条未审核信息，点击查看</a><span>2018.06.27</span></li>
+						<li><a href="#">• 您有一条未审核信息，点击查看</a><span>2018.06.27</span></li>
+						
+					</ul>
+					<div class="msg_more"><a href="tongzhixiaoxi.html">查看全部</a></div>
+				</dd>
+			</dl>
+			<div class="tui fl">
+				<a href="#"><img src="images/ico_t6.png" /></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="side_nav">
+		<ul class="set_nav">
+			<li class="hover"><a href="zhanghaobangding.html">账号绑定</a></li>
+			<li><a href="#">角色管理</a></li>
+			<li><a href="#">用户管理</a></li>
+			<li><a href="caozuorizhi.html">操作日志</a></li>
+			<li><a href="tongjifenxi.html">统计分析</a></li>
+			<li><a href="tongzhixiaoxi.html">通知消息</a></li>
+		</ul>
+	</div>
+	
+	<div class="main">
+	<div class="pad30">
+		<div class="bor bgfff">
+			<div class="title"><strong>账号绑定</strong></div>
+			<div class="bangding_btn">
+				<a href="javascript:;" data-toggle="modal" data-target="#delBut">删除</a><a href="javascript:;" data-toggle="modal" data-target="#motBut">修改</a><a href="javascript:;" data-toggle="modal" data-target="#lookBut">查看</a><a href="javascript:;" data-toggle="modal" data-target="#bangweiModal">绑定微博号</a>
+			</div>
+			<div class="table">
+			<table>
+				<tr>
+					<th>微博昵称</th>
+					<th>v认证</th>
+					<th>登录名</th>
+					<th>微博授权</th>
+					<th>所属组织</th>
+					<th>发稿审核</th>
+					<th>审核用户</th>
+				</tr>
+				<tr>
+					<td class="bang_table_t">
+						<label><input type="checkbox" /></label>
+						<span class="xinxi_btn">
+							<em><img src="images/img_1.png" /></em>
+							中科院之声
+						</span>
+					</td>
+					<td>企业认证</td>
+					<td>zhongkeyuanzhisheng</td>
+					<td>已授权</td>
+					<td>中国科学院</td>
+					<td>
+						<p><a href="javascript:;" class="green" data-toggle="modal" data-target="#reviewUserModal"><img src="images/ico_7.png" width="20" />增加审核用户</a></p>
+						<p>cas_wh</p>
+						<p>cas_zm</p>
+					</td>
+					<td><label class="switch_label"><div class="switch_btn"></div></label></td>
+				</tr>
+			</table>
+			</div>
+		</div>
+		
+		<div class="bor bgfff xinxi_box" style="display: none;">
+			<div class="title relative">
+				<strong>账号信息</strong>
+				<div class="close_xinxi"><img src="images/ico_close1.png" width="14" height="14" /></div>
+			</div>
+			<div class="jixu_xinxi pad30">
+				<h3><strong>基本信息</strong><a href="#">编辑</a></h3>
+				<ul>
+					<li><strong>登录名</strong>186****433<a href="#">【取消授权】</a></li>
+					<li><strong>昵称</strong>中科院之声</li>
+					<li><strong>微博认证</strong>中国科学院官方微博</li>
+					<li><strong>行业类别</strong>政府-教育</li>
+					<li><strong>简介</strong><a href="#"><i></i>修改简介</a>我们邀您一起，以科学的眼光看世界，以全球的思维论科学。</li>
+					<li><strong>邮箱</strong><a href="#"><i></i>修改邮箱</a>weibo@cashq.ac.cn</li>
+					<li><strong>个性域名</strong><a href="#"><i></i>修改域名</a>中国科学院官方网站</li>
+					<li><strong>注册时间</strong>2018-08-08</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+	</div>
+	</div>
+
+	<!-- 审核用户 - 弹出框-->
+	<div class="modal fade " id="reviewUserModal" >
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bgf3">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="reviewUserModalLabel">审核用户</h4>
+				</div>
+				<div class="modal-body ">
+					<div class="user_review clearfix">
+						<div class="user_xuan fl">
+							<h3>选择用户</h3>
+							<ul>
+								<li><label><input type="checkbox" /><img src="images/ico_20.png" />weixin_241711</label></li>
+								<li><label><input type="checkbox" /><img src="images/ico_20.png" />weixin_241711</label></li>
+								<li><label><input type="checkbox" /><img src="images/ico_20.png" />weixin_241711</label></li>
+								<li><label><input type="checkbox" /><img src="images/ico_20.png" />weixin_241711</label></li>
+								<li><label><input type="checkbox" /><img src="images/ico_20.png" />weixin_241711</label></li>
+								<li><label><input type="checkbox" /><img src="images/ico_20.png" />weixin_241711</label></li>
+								<li><label><input type="checkbox" /><img src="images/ico_20.png" />weixin_241711</label></li>
+								<li><label><input type="checkbox" /><img src="images/ico_20.png" />weixin_241711</label></li>
+								<li><label><input type="checkbox" /><img src="images/ico_20.png" />weixin_241711</label></li>
+								<li><label><input type="checkbox" /><img src="images/ico_20.png" />weixin_241711</label></li>
+								<li><label><input type="checkbox" /><img src="images/ico_20.png" />weixin_241711</label></li>
+								<li><label><input type="checkbox" /><img src="images/ico_20.png" />weixin_241711</label></li>
+								<li><label><input type="checkbox" /><img src="images/ico_20.png" />weixin_241711</label></li>
+								<li><label><input type="checkbox" /><img src="images/ico_20.png" />weixin_241711</label></li>
+								<li><label><input type="checkbox" /><img src="images/ico_20.png" />weixin_241711</label></li>
+								<li><label><input type="checkbox" /><img src="images/ico_20.png" />weixin_241711</label></li>
+							</ul>
+						</div>
+						<em class="fl user_c"><img src="images/ico_21.png" /></em>
+						<div class="user_xuan fr">
+							<h3>审核用户</h3>
+							<ul>
+								<li><img src="images/ico_20.png" />weixin_241711</li>
+								<li><img src="images/ico_20.png" />weixin_241711</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn_gray" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn_org">确认</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- 删除 - 弹出框-->
+	<div class="modal fade " id="delBut" >
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bgf3">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">温馨提示</h4>
+				</div>
+				<div class="modal-body " style="line-height: 100px;padding-left: 40px;">
+					确定要删除吗？
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn_gray" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn_org">确认</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 修改 - 弹出框-->
+	<div class="modal fade " id="motBut" >
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bgf3">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">修改</h4>
+				</div>
+				<div class="modal-body " style="height: 200px">
+					
+					<div class="search" style="border:0;">
+						<ul class="clearfix">
+							<li style="width: 100%;"><label>微博号：中科院之声</label></li>
+							<li><label>所属组织机构：</label>
+								<div class="name">
+									<span class="txt">中国科学院</span>
+									<ul>
+										<li><input type="text" placeholder="请输入组织"></li>
+										<li><a href="javascript:;" title="">中国科学院</a></li>
+										<li><a href="javascript:;" title="">院领导</a></li>
+										<li><a href="javascript:;" title="">办公厅</a></li>
+										<li><a href="javascript:;" title="">学部工作局</a></li>
+										<li><a href="javascript:;" title="">前沿科学与教育局</a></li>
+										<li><a href="javascript:;" title="">科技促进发展局</a></li>
+									</ul>
+								</div>
+							</li>
+
+						</ul>
+
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn_gray" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn_org">确认</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- 查看 - 弹出框-->
+	<div class="modal fade " id="lookBut" >
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bgf3">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">查看</h4>
+				</div>
+				<div class="modal-body " style="padding-left: 74px;">
+					<table>
+						<tr>
+							<td>微博号</td><td>中科院之声</td>
+						</tr>
+						<tr>
+							<td>所属组织</td><td>中国科学院</td>
+						</tr>
+						<tr>
+							<td>创建用户</td><td>admin</td>
+						</tr>
+						<tr>
+							<td>创建时间</td><td>2018-11-09</td>
+						</tr>
+					</table>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn_gray" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn_org">确认</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 绑定微博号 - 弹出框-->
+	<div class="modal fade " id="bangweiModal" >
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bgf3">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="bangweiModalLabel">绑定微博号</h4>
+				</div>
+				<div class="modal-body ">
+					
+					<div class="tishi_sq">
+						授权<span class="org">微博管理系统</span>访问你的微博账号
+					</div>
+					
+					<div class="clearfix bang_wb">
+						<p>
+							• 获得你的个人信息，好友关系<br />
+							• 分享内容到你的微博<br />
+							• 获得你的评论
+						</p>
+						<em><img src="images/ico_21.png" /></em>
+						<span>
+							<img src="images/ico_head_6.png" width="70" alt="" />
+						</span>
+					</div>
+					
+					<ul class="bang_wb_ul">
+						<li class="clearfix"><label><b class="org">*</b>微博账号：</label><input type="text" value="" class="input_3 fl" style="width: 300px" /></li>
+						<li class="clearfix"><label><b class="org">*</b>微博密码：</label><input type="text" value="" class="input_3 fl" style="width: 300px" /></li>
+						<li class="clearfix"><label><b class="org">*</b>所属组织：</label><input type="text" value="" class="input_3 fl" style="width: 300px" /><p><a href="#">选择组织机构</a></p></li>
+					</ul>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn_gray" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn_org">确认</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(function(){
+			$(".switch_btn").click(function(){
+				$(this).toggleClass("hover");
+			})
+			
+			$(".close_xinxi").click(function(){
+
+				$(this).parents(".xinxi_box").hide();
+
+			})
+			$(".xinxi_btn").click(function(){
+
+				$(".xinxi_box").show();
+
+			})
+	
+		});
+        $(function(){
+            $(".search .name .txt").click(function(){
+                $(".search .name ul").toggleClass("single");
+                $(".search .name ul").siblings().removeClass("single");
+            });
+            $(".search .name li").click(function(){
+                if ($(this).index() != 0){
+                    $(".search .name ul").removeClass("single");
+				}
+            });
+            $(".search .name ul").find('li').click(function(){
+                if ($(this).index() != 0){
+                	$('.search .name .txt').text($(this).text());
+                }
+            });
+        });
+	</script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	
+	<div class="header clearfix">
+		<div class="logo fl"><img src="images/logo1.png" /></div>
+		<div class="fr">
+			<ul class="fl head_nav fl">
+				<li><a href="neirongguanli.html" class="ico_t1">内容管理</a></li>
+				<li class="hover"><a href="shenheguanli.html" class="ico_t2">审核管理</a></li>
+				<li><a href="zhanghaobangding.html" class="ico_t3">系统设置</a></li>
+			</ul>
+			<div class="head_vip fl">
+				<img src="images/ico_t4.png" />Sysadmin
+			</div>
+			<dl class="msg fl">
+				<dt><img src="images/ico_t5.png" /><b></b></dt>
+				<dd>
+					<ul>
+						<li><a href="#">• 您有一条未审核信息，点击查看</a><span>2018.06.27</span></li>
+						<li><a href="#">• 您有一条未审核信息，点击查看</a><span>2018.06.27</span></li>
+						
+					</ul>
+					<div class="msg_more"><a href="tongzhixiaoxi.html">查看全部</a></div>
+				</dd>
+			</dl>
+			<div class="tui fl">
+				<a href="#"><img src="images/ico_t6.png" /></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="side_nav">
+		<ul class="set_nav">
+			<li class="hover"><a href="#"><img src="images/ico_n.png" />中科院高能所</a></li>
+			<li><a href="#"><img src="images/ico_n.png" />中科院高能所</a></li>
+			<li><a href="#"><img src="images/ico_n.png" />中科院高能所</a></li>
+		</ul>
+	</div>
+	
+	<div class="main">
+	<div class="pad30">
+		<div class="bor bgfff">
+			<div class="title"><strong>审核管理</strong></div>
+			
+			<div class="bangding_btn">
+				<a href="javascript:;" data-toggle="modal" data-target="#rejectModal">驳回审核</a><a href="javascript:;" data-toggle="modal" data-target="#passModal">通过审核</a>
+			</div>
+			
+			<div class="table">
+			<table>
+				<tr>
+					<th><input type="checkbox" class="all_check" /></th>
+					<th>微博内容</th>
+					<th>微博类型</th>
+					<th>发布时间</th>
+					<th>发布用户</th>
+					<th>所属组织</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="check_item" /></td>
+					<td class="shen_tit text_left">科学史#2008年6月9日，中科院院士、有机化学家蒋丽金逝世。1955年，她回国后，从.....<a href="#" class="blue">&lt;详情&gt;</a></td>
+					<td>定时微博</td>
+					<td>2018.07.01 09:00</td>
+					<td>admin</td>
+					<td>中国科学院</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="check_item" /></td>
+					<td class="shen_tit text_left">科学史#2008年6月9日，中科院院士、有机化学家蒋丽金逝世。1955年，她回国后，从.....<a href="#" class="blue">&lt;详情&gt;</a></td>
+					<td>定时微博</td>
+					<td>2018.07.01 09:00</td>
+					<td>admin</td>
+					<td>中国科学院</td>
+				</tr>
+			</table>
+			</div>
+			
+		</div>
+	
+		
+	</div>
+	</div>
+	
+	<!-- 驳回审核 - 弹出框-->
+	<div class="modal fade " id="rejectModal" >
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bgf3">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="rejectModalLabel">驳回审核</h4>
+				</div>
+				<div class="modal-body">
+					<div class="reject_box">
+						<h3>请输入审核意见：</h3>
+						<textarea></textarea>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn_gray" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn_org">确认</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 通过审核 - 弹出框-->
+	<div class="modal fade " id="passModal" >
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bgf3">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="passModalLabel">通过审核</h4>
+				</div>
+				<div class="modal-body">
+					<div class="reject_box">
+						<h3>请输入审核意见：</h3>
+						<textarea></textarea>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn_gray" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn_org">确认</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/allCheck.js"></script>
+
+</body>
+</html>

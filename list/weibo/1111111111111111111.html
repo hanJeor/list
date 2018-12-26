@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<button id="btn_add">添加</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document" style="width:330px;">
+        <div class="modal-content" style="border-top:2px solid rgb(251,137,77);">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">添加标签</h4>
+            </div>
+            <div class="modal-body" style="height:200px;">
+                <div class="form-group">
+                    <label style="font-weight: normal">我的标签：</label>
+                    <h6 style="text-align:right;width:200px;height:30px;line-height:30px;padding-right:10%;border:1px solid rgb(237,237,246);margin-left:28%;border-radius:5px;background:#eee;">最多5个标签，用空格隔开</h6>
+                    <!--<input type="text" name="txt_departmentname" class="form-control" id="txt_departmentname" placeholder="部门名称">-->
+                </div>
+
+                <div class="form-group">
+                    <label for="txt_statu" style="font-weight: normal;float:left;">添加标签：</label>
+                    <button id="show_txt" style="border:none;color:white;padding:0;"></button>
+                    <input type="text" onblur="myfunction()" name="txt_statu" class="form-control" id="txt_statu" placeholder="每个标签仅限14个字符" style="height:30px;line-height:30px;width:60%;margin-left:4%;margin-top:20px;float:left;">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="left btn btn-success" data-dismiss="modal">确定</button>
+                <button class="left btn btn-danger" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    //注册新增按钮的事件
+    $("#btn_add").click(function () {
+        $("#myModalLabel").text("添加标签");
+        $('#myModal').modal();
+    });
+
+    //用正则表达式限制 输入必须为数字或字母，长度最多为14位
+    function myfunction(){
+        var x = document.getElementById("txt_statu");
+        var y = document.getElementById("cont");
+        c =  /^[a-zA-Z0-9\s]{0,14}$/;
+        if((x.value)==""){
+            alert("您未输入内容！");
+        }else if ((x.value).match(c)){
+            alert("输入格式正确！");
+        }
+        else{
+            alert("每个标签仅限14个字符，请重新输入！");
+            x.value = "";
+        }
+    }
+    //双向数据绑定
+    let obj = {};
+    let writeDom = document.getElementById("txt_statu");
+    let showDom = document.getElementById("show_txt");
+    Object.defineProperty(obj,'txt_statu',{
+        get:function(){
+            return obj
+        },
+        set:function(newValue){
+            showDom.innerHTML=newValue;
+            let str = showDom.innerHTML;
+            //按空格分割
+            let arr = str.trim().split(/\s+/);
+            var len = str.trim().split(/\s+/).length;
+            for(var i =0;i<len;i++){
+                var btn = document.createElement('button');
+                var node=document.createTextNode("这是新段落。");
+                btn.appendChild(node);
+                // document.getElementsByTagName('button')[i].innerHTML(arr[i]);
+            }
+        }
+    })
+    writeDom.addEventListener('keyup',function(e){
+        obj.txt_statu = e.target.value;
+    })
+
+    //点击按钮切换背景色
+    var btn1=document.getElementById('show_txt');
+    btn1.onclick=function(){
+        btn1.style.background=bg1()
+    };
+    function bg1(){
+        var r=Math.floor(Math.random()*256);
+        var g=Math.floor(Math.random()*256);
+        var b=Math.floor(Math.random()*256);
+        return "rgb("+r+','+g+','+b+")";
+    }
+</script>
+</body>
+</html>
+
+
+
+
