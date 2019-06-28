@@ -1,0 +1,89 @@
+ var data = [
+    {
+        "agentCode": "A0011",
+        "agentGroup": "T000001",
+        "agentName": "王帝1",
+        "list": [
+            {
+                "num": 300,
+                "wageName": "首年度佣金",
+                "wageNo": "W00001"
+            },
+            {
+                "num": 300,
+                "wageName": "续年度佣金",
+                "wageNo": "W00002"
+            },
+            {
+                "num": 300,
+                "wageName": "增员奖金",
+                "wageNo": "W00003"
+            },
+            {
+                "num": 300,
+                "wageName": "组管理津贴",
+                "wageNo": "W00004"
+            }
+        ],
+        "manageCom": "8601",
+        "wageMonth": "201907"
+    },
+    {
+        "agentCode": "A0012",
+        "agentGroup": "T000001",
+        "agentName": "王帝1",
+        "list": [
+            {
+                "num": 300,
+                "wageName": "首年度佣金",
+                "wageNo": "W00001"
+            },
+            {
+                "num": 300,
+                "wageName": "续年度佣金",
+                "wageNo": "W00002"
+            },
+            {
+                "num": 300,
+                "wageName": "增员奖金",
+                "wageNo": "W00003"
+            },
+            {
+                "num": 300,
+                "wageName": "组管理津贴",
+                "wageNo": "W00004"
+            }
+        ],
+        "manageCom": "8601",
+        "wageMonth": "201907"
+    },
+    {
+        "agentCode": "A0013",
+        "agentGroup": "T000001",
+        "agentName": "王帝1",
+        "list": [
+            {
+                "num": 300,
+                "wageName": "首年度佣金",
+                "wageNo": "W00001"
+            },
+            {
+                "num": 300,
+                "wageName": "续年度佣金",
+                "wageNo": "W00002"
+            },
+            {
+                "num": 300,
+                "wageName": "增员奖金",
+                "wageNo": "W00003"
+            },
+            {
+                "num": 300,
+                "wageName": "组管理津贴",
+                "wageNo": "W00004"
+            }
+        ],
+        "manageCom": "8601",
+        "wageMonth": "201907"
+    }
+]
